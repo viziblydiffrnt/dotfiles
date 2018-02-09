@@ -1,0 +1,6 @@
+Compression yes
+CompressionLevel 6
+
+Host <host_shortcut_name>
+ Hostname <host ip>
+ User <user>
