@@ -21,7 +21,7 @@ module.exports = {
     cursorShape: 'UNDERLINE',
 
     // set to true for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
     foregroundColor: '#57484d',
@@ -116,7 +116,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: ["hyperlinks","hyper-search","hypertheme","hyper-tabs-enhanced"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
