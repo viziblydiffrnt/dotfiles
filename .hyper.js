@@ -2,11 +2,16 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
+// const backgroundColor = 'rgba(40, 44, 52, 0.99)'
+// const foregroundColor = '#abb2bf'
+// const cursorColor = foregroundColor
+// const borderColor = backgroundColor
+
 module.exports = {
   config: {
     // Choose either "stable" for receiving highly polished,
     // or "canary" for less polished but more frequent updates
-    updateChannel: 'stable',
+    updateChannel: 'canary',
 
     // default font size in pixels for all tabs
     fontSize: 14,
@@ -15,7 +20,7 @@ module.exports = {
     fontFamily: '"SourceCodePro+Powerline+Awesome Regular", Hack, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: '#57484d',
+    cursorColor: '#b2b2b2',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'UNDERLINE',
@@ -24,13 +29,13 @@ module.exports = {
     cursorBlink: true,
 
     // color of the text
-    foregroundColor: '#57484d',
+    foregroundColor: '#abb2bf',
 
     // terminal background color
-    backgroundColor: '#ddd5c6',
+    backgroundColor: 'rgba(40, 44, 52, 0.99)',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: 'rgba(40, 44, 52, 0.99)',
 
     // custom css to embed in the main window
     css: '',
@@ -55,22 +60,24 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#2b1624',
-      red: '#cc250e',
-      green: '#979375',
-      yellow: '#efb35a',
-      blue: '#527d8c',
-      magenta: '#a96639',
-      cyan: '#333333',
-      white: '#a79d95',
-      lightBlack: '#726565',
-      lightRed: '#cc250e',
-      lightGreen: '#979375',
-      lightYellow: '#efb35a',
-      lightBlue: '#527d8c',
-      lightMagenta: '#a96639',
-      lightCyan: '#666666',
-      lightWhite: '#ddd5c6'
+      black: '#002831',
+      red: '#ff4c4c',
+      green: '#cccccc',
+      yellow: '#A57706',
+      blue: '#2176C7',
+      magenta: '#e5e5e5',
+      cyan: '#68868c',
+      white: '#d0d0d0',
+      lightBlack: '#808080',
+      lightRed: '#ff4c4c',
+      lightGreen: '#33ff00',
+      lightYellow: '#ffff00',
+      lightBlue: '#0066ff',
+      lightMagenta: '#e5e5e5',
+      lightCyan: '#ff4c4c',
+      // colorCubes: '#ffffff',
+      // grayscale: foregroundColor,
+      lightWhite: '#ffffff'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -116,7 +123,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperlinks","hyper-search","hypertheme","hyper-tabs-enhanced"],
+  plugins: ["hyperlinks","hyper-search","hypertheme"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
