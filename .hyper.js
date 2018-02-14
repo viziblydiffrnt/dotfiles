@@ -123,7 +123,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperlinks","hyper-search","hypertheme"],
+  plugins: ["hyperlinks","hyper-tabs-enhanced"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
